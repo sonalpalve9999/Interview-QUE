@@ -28,9 +28,14 @@ public class Exam3 {
         // String[] inarr2 = sc.nextLine().split(",");
         // String instr1 = sc.nextLine();
         // String instr2 = sc.nextLine();
+        for(int i = 0 ;  i < inarr1.length ; i++){
+            System.out.print(inarr1[i]+"\n");
+        }
+        String s ="";
+        for(int i = 0 ;  i < inarr1.length ; i++){
+            s = s.concat(inarr1[i]);
+        }
 
-        String s = inarr1.toString();
-        System.out.print(inarr1);
         List<String> perms = permutations(s);
         for(int i = 0 ; i < perms.size() ; i++){
             System.out.println(perms.get(i));
